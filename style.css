@@ -22,7 +22,7 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height: 99vh;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -44,9 +44,9 @@ body {
  
 .title {
     color: rgb(231, 211, 173);
-    font-size: 6vw;
+    font-size: 2em;
     margin: 0px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .text-box-area {
@@ -54,7 +54,7 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     margin: 30px;
     padding: 30px;
-    width: max-content;
+    max-width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
@@ -63,6 +63,12 @@ body {
     justify-content: center;
     box-shadow: inset;
     animation: text-box-shadow-animation 20s infinite alternate;
+}
+
+@media (max-width: 745px) {
+    .text-box-area {
+        max-width: min-content;
+    }
 }
 
 @keyframes text-box-shadow-animation {
@@ -81,7 +87,7 @@ body {
     border: none;
     border-radius: 20px;
     height: 40px;
-    width: 250px;
+    width: 250px; 
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
     text-align: center;
@@ -119,7 +125,6 @@ label {
 .love-score {
     width: 300px;
     height: 300px;
-    margin-left: 100px;
     background-color: transparent;
     display: flex;
     align-items: center;
