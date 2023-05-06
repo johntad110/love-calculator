@@ -26,7 +26,7 @@ function calculate() {
 
     let love_str = (yourName + "loves" + loversName).toLowerCase();
 
-    // each unique char in love string.
+    // Each unique char in love string.
     let unique_chars = [];
     love_str.split('').forEach(char => {
         if (!unique_chars.includes(char)) {
@@ -39,10 +39,12 @@ function calculate() {
     for (const c of unique_chars) {
         char_count.push(love_str.count(c));
     }
+    char_count = sanitize(char_count);
+    console.log(char_count);
 
     do {
-        char_count = sanitize(char_count);
         char_count[0] += char_count.pop();
+        char_count = sanitize(char_count);
     } while (char_count.length > 2)
 
     return `${(char_count[0] * 10) + char_count[1]}%`
