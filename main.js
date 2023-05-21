@@ -1,3 +1,7 @@
+
+const yourName = document.forms["info-form"]["yours"];
+const loversName = document.forms["info-form"]["lovers"];
+
 String.prototype.count = function(char) {
     let count = 0;
 
@@ -21,10 +25,7 @@ function sanitize(list) {
 }
 
 function calculate() {
-    const yourName = document.forms["info-form"]["yours"].value;
-    const loversName = document.forms["info-form"]["lovers"].value;
-
-    let love_str = (yourName + "loves" + loversName).toLowerCase();
+    let love_str = (yourName.value + "loves" + loversName.value).toLowerCase();
 
     // Each unique char in love string.
     let unique_chars = [];
@@ -52,9 +53,43 @@ function calculate() {
 }
 
 function show_love_score() {
+
+    document.querySelector('.tell-me').style.display = "none";
+    if (yourName.value === '' || loversName.value === '') {
+        console.log("Clicked and is empty");
+        document.querySelector('.tell-me').style.display = "block";
+        return false;
+    }
+
+    const love_stmnt = document.querySelector(".love-stmnt");
+    love_stmnt.style.fontSize = "160%";
+
+    var dont_calculate = ['yoseph', 'yohannes', 'joseph', 'john', 'josi', 'jo'];
+
+    if (dont_calculate.includes(yourName.value.toLowerCase()) || dont_calculate.includes(loversName.value.toLowerCase())) {
+        console.log("I know I don't have to calcualte that.");
+        love_stmnt.innerHTML = "Sorry! But, I can't calculate that.🤨 My maker forbids me from doing so.☹️";
+        love_stmnt.style.fontSize = "100%";
+        return false;
+    }
+
+    var love_score = calculate();
+
+    if (yourName.value.toLowerCase() === loversName.value.toLowerCase()) {
+        love_stmnt.innerHTML = `You love yourself this much?😂`
+        document.querySelectorAll(".share-stmnt")[1].innerHTML = "You have to share it.🤣";
+        document.querySelector(".share-score-area").style.display = "block";
+    } else {
+        love_stmnt.innerHTML = `${yourName.value} Loves ${loversName.value}`;
+    }
+
     const score = document.querySelector(".score");
-    score.innerHTML = calculate();
-    
+    score.innerHTML = love_score;
+
+    if (parseInt(love_score.substring(0, love_score.length - 1)) > 70) {
+        document.querySelector(".share-score-area").style.display = "block";
+    }
+
     return false;
 }
 

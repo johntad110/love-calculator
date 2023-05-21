@@ -1,0 +1,9 @@
+.shared-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculate-btn {
+    margin: 0;
+}

@@ -107,7 +107,7 @@ label {
     width: 270px;
     border: none;
     border-radius: 15px;
-    color: wheat;
+    color: #f5deb3;
     background-color: rgba(255, 155, 155, 0.3);
     justify-content: center;
     align-items: center;
@@ -120,6 +120,22 @@ label {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     color: rgb(255, 255, 255);
     border-radius: 30px;
+}
+
+.love-score-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.love-stmnt {
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Bruno Ace SC', cursive;
+    color: wheat;
+    font-weight: 600;
+    font-style: italic;
+    max-width: 250px;
 }
 
 .love-score {
@@ -171,4 +187,44 @@ label {
     top: -30px;
     font-size: 6rem;
     color: rgb(255, 214, 139);
+}
+
+.tell-me {
+    display: none;
+}
+
+.share-score-area {
+    display: none;
+}
+
+.share-score {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.share-stmnt {
+    text-align: center;
+    font-size: 110%;
+    font-family: 'Bruno Ace SC', cursive;
+    color: wheat;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 10px;
+    max-width: 250px;
+}
+
+.share-icon {
+    padding: 10px;
+    margin: 0px 2px;
+    min-width: 30px;
+    max-width: 30px;
+    animation: text-box-shadow-animation 1s infinite alternate;
+}
+
+.share-icon:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+    animation: none;
+    transform: translateY(-6px);
+    transition: 0.3s;
 }
