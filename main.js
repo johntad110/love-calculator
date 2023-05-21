@@ -65,6 +65,7 @@ function show_love_score() {
     love_stmnt.style.fontSize = "160%";
     document.querySelectorAll(".share-stmnt")[1].innerHTML = "Wow! Amazing Score. Want to share?";
     document.querySelector(".share-score-area").style.display = "none";
+    love_stmnt.innerHTML = '?';
 
     var dont_calculate = ['yoseph', 'yohannes', 'joseph', 'john', 'josi', 'jo'];
 
