@@ -65,12 +65,12 @@ function show_love_score() {
     love_stmnt.style.fontSize = "160%";
     document.querySelectorAll(".share-stmnt")[1].innerHTML = "Wow! Amazing Score. Want to share?";
     document.querySelector(".share-score-area").style.display = "none";
-    love_stmnt.innerHTML = '?';
 
     var dont_calculate = ['yoseph', 'yohannes', 'joseph', 'john', 'josi', 'jo'];
 
     if (dont_calculate.includes(yourName.value.toLowerCase()) || dont_calculate.includes(loversName.value.toLowerCase())) {
         console.log("I know I don't have to calcualte that.");
+        document.querySelector(".score").innerHTML = "?";
         love_stmnt.innerHTML = "Sorry! But, I can't calculate that.🤨 My maker forbids me from doing so.☹️";
         love_stmnt.style.fontSize = "100%";
         return false;
