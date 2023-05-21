@@ -239,17 +239,6 @@ footer {
     align-items: center;
 }
 
-footer a {
-    color: wheat;
-    text-decoration: none;
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.1em;
-}
-
-footer a:hover {
-    color: rgb(241, 229, 97);
-}
-
 footer p {
     color: wheat;
     font-size: 1em;
