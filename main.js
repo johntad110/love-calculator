@@ -80,11 +80,6 @@ function show_love_score() {
     }
 
     var love_score = calculate();
-    // check score (high, low, moderate)
-    // generate a number (1 - 30)
-    // load the appropriate quote and set innerHTML to it.
-    // set the display property to block
-    // reset on function start
     var q_id = Math.floor(Math.random() * (15)) + 1;
     var value = "";
     if (parseInt(love_score.substring(0, love_score.length - 1)) >= 80) {
