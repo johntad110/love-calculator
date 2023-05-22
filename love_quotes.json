@@ -1,0 +1,79 @@
+[
+    {
+        "love_quotes": 
+        {
+            "neutral": 
+            {
+                "1": "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage. -Lao Tzu",
+                "2": "Love is not about possession. Love is about appreciation. -Osho",
+                "3": "To love someone is to see a miracle invisible to others. -Francois Mauriac",
+                "4": "The best and most beautiful things in this world cannot be seen or even heard, but must be felt with the heart. -Helen Keller",
+                "5": "You know it's love when all you want is that person to be happy, even if you're not part of their happiness. -Julia Roberts",
+                "6": "Love is not about how many days, weeks or months you've been together, it's all about how much you love each other every day. -Unknown",
+                "7": "You are the last thought in my mind before I drift off to sleep and the first thought when I wake up each morning. -Unknown",
+                "8": "Love is composed of a single soul inhabiting two bodies. -Aristotle",
+                "9": "In your light, I learn how to love. In your beauty, how to make poems. You dance inside my chest where no-one sees you, but sometimes I do, and that sight becomes this art. -Rumi",
+                "10": "Love never claims, it ever gives. Love never suffers, never resents, never revenges itself. -Mahatma Gandhi",
+                "11": "Love is a promise; love is a souvenir, once given never forgotten, never let it disappear. -John Lennon",
+                "12": "When love is not madness, it is not love. -Pedro Calderon de la Barca",
+                "13": "Love is a canvas furnished by Nature and embroidered by imagination. -Voltaire",
+                "14": "I am yours, don't give myself back to me. -Rumi",
+                "15": "The best love is the kind that awakens the soul and makes us reach for more, that plants a fire in our hearts and brings peace to our minds. And that's what you've given me. That's what I'd hoped to give you forever. -Nicholas Sparks"
+              },
+            "low": 
+            {
+                "1": "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage. -Lao Tzu",
+                "2": "Love is not about possession. Love is about appreciation. -Osho",
+                "3": "To love someone is to see a miracle invisible to others. -Francois Mauriac",
+                "4": "The best and most beautiful things in this world cannot be seen or even heard, but must be felt with the heart. -Helen Keller",
+                "5": "You know it's love when all you want is that person to be happy, even if you're not part of their happiness. -Julia Roberts",
+                "6": "Love is not about how many days, weeks or months you've been together, it's all about how much you love each other every day. -Unknown",
+                "7": "You are the last thought in my mind before I drift off to sleep and the first thought when I wake up each morning. -Unknown",
+                "8": "Love is composed of a single soul inhabiting two bodies. -Aristotle",
+                "9": "In your light, I learn how to love. In your beauty, how to make poems. You dance inside my chest where no-one sees you, but sometimes I do, and that sight becomes this art. -Rumi",
+                "10": "Love never claims, it ever gives. Love never suffers, never resents, never revenges itself. -Mahatma Gandhi",
+                "11": "Love is a promise; love is a souvenir, once given never forgotten, never let it disappear. -John Lennon",
+                "12": "When love is not madness, it is not love. -Pedro Calderon de la Barca",
+                "13": "Love is a canvas furnished by Nature and embroidered by imagination. -Voltaire",
+                "14": "I am yours, don't give myself back to me. -Rumi",
+                "15": "The best love is the kind that awakens the soul and makes us reach for more, that plants a fire in our hearts and brings peace to our minds. And that's what you've given me. That's what I'd hoped to give you forever. -Nicholas Sparks"
+              },
+            "moderate": 
+            {
+                "1": "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage. -Lao Tzu",
+                "2": "Love is not about possession. Love is about appreciation. -Osho",
+                "3": "To love someone is to see a miracle invisible to others. -Francois Mauriac",
+                "4": "The best and most beautiful things in this world cannot be seen or even heard, but must be felt with the heart. -Helen Keller",
+                "5": "You know it's love when all you want is that person to be happy, even if you're not part of their happiness. -Julia Roberts",
+                "6": "Love is not about how many days, weeks or months you've been together, it's all about how much you love each other every day. -Unknown",
+                "7": "You are the last thought in my mind before I drift off to sleep and the first thought when I wake up each morning. -Unknown",
+                "8": "Love is composed of a single soul inhabiting two bodies. -Aristotle",
+                "9": "In your light, I learn how to love. In your beauty, how to make poems. You dance inside my chest where no-one sees you, but sometimes I do, and that sight becomes this art. -Rumi",
+                "10": "Love never claims, it ever gives. Love never suffers, never resents, never revenges itself. -Mahatma Gandhi",
+                "11": "Love is a promise; love is a souvenir, once given never forgotten, never let it disappear. -John Lennon",
+                "12": "When love is not madness, it is not love. -Pedro Calderon de la Barca",
+                "13": "Love is a canvas furnished by Nature and embroidered by imagination. -Voltaire",
+                "14": "I am yours, don't give myself back to me. -Rumi",
+                "15": "The best love is the kind that awakens the soul and makes us reach for more, that plants a fire in our hearts and brings peace to our minds. And that's what you've given me. That's what I'd hoped to give you forever. -Nicholas Sparks"
+              },
+            "high": 
+            {
+                "1": "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage. -Lao Tzu",
+                "2": "Love is not about possession. Love is about appreciation. -Osho",
+                "3": "To love someone is to see a miracle invisible to others. -Francois Mauriac",
+                "4": "The best and most beautiful things in this world cannot be seen or even heard, but must be felt with the heart. -Helen Keller",
+                "5": "You know it's love when all you want is that person to be happy, even if you're not part of their happiness. -Julia Roberts",
+                "6": "Love is not about how many days, weeks or months you've been together, it's all about how much you love each other every day. -Unknown",
+                "7": "You are the last thought in my mind before I drift off to sleep and the first thought when I wake up each morning. -Unknown",
+                "8": "Love is composed of a single soul inhabiting two bodies. -Aristotle",
+                "9": "In your light, I learn how to love. In your beauty, how to make poems. You dance inside my chest where no-one sees you, but sometimes I do, and that sight becomes this art. -Rumi",
+                "10": "Love never claims, it ever gives. Love never suffers, never resents, never revenges itself. -Mahatma Gandhi",
+                "11": "Love is a promise; love is a souvenir, once given never forgotten, never let it disappear. -John Lennon",
+                "12": "When love is not madness, it is not love. -Pedro Calderon de la Barca",
+                "13": "Love is a canvas furnished by Nature and embroidered by imagination. -Voltaire",
+                "14": "I am yours, don't give myself back to me. -Rumi",
+                "15": "The best love is the kind that awakens the soul and makes us reach for more, that plants a fire in our hearts and brings peace to our minds. And that's what you've given me. That's what I'd hoped to give you forever. -Nicholas Sparks"
+              }
+        }
+    }
+]

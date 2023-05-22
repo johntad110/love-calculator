@@ -54,19 +54,22 @@ function calculate() {
 
 function show_love_score() {
 
-    document.querySelector('.tell-me').style.display = "none";
+    document.querySelector('.tell-me').style.display = "none"
+
+    const love_stmnt = document.querySelector(".love-stmnt");
+    love_stmnt.style.fontSize = "160%";
+    love_stmnt.innerHTML = "";
+    document.querySelectorAll(".share-stmnt")[1].innerHTML = "Wow! Amazing Score. Want to share?";
+    document.querySelector(".share-score-area").style.display = "none";
+    document.querySelector(".love-quote").style.display = "none";
+
+    var dont_calculate = ['yoseph', 'yohannes', 'joseph', 'john', 'josi', 'jo', "jossi", "jossy", "johansberg"];
+
     if (yourName.value === '' || loversName.value === '') {
         console.log("Clicked and is empty");
         document.querySelector('.tell-me').style.display = "block";
         return false;
     }
-
-    const love_stmnt = document.querySelector(".love-stmnt");
-    love_stmnt.style.fontSize = "160%";
-    document.querySelectorAll(".share-stmnt")[1].innerHTML = "Wow! Amazing Score. Want to share?";
-    document.querySelector(".share-score-area").style.display = "none";
-
-    var dont_calculate = ['yoseph', 'yohannes', 'joseph', 'john', 'josi', 'jo'];
 
     if (dont_calculate.includes(yourName.value.toLowerCase()) || dont_calculate.includes(loversName.value.toLowerCase())) {
         console.log("I know I don't have to calcualte that.");
@@ -77,6 +80,29 @@ function show_love_score() {
     }
 
     var love_score = calculate();
+    // check score (high, low, moderate)
+    // generate a number (1 - 30)
+    // load the appropriate quote and set innerHTML to it.
+    // set the display property to block
+    // reset on function start
+    var q_id = Math.floor(Math.random() * (15)) + 1;
+    var value = "";
+    if (parseInt(love_score.substring(0, love_score.length - 1)) >= 80) {
+        value = "high";
+    } else if (parseInt(love_score.substring(0, love_score.length - 1)) >= 50) {
+        value = "moderate";
+    } else if (parseInt(love_score.substring(0, love_score.length - 1)) < 50) {
+        value = "low";
+    } else {
+        value = "neutral";
+    }
+    fetch('./love_quotes.json')
+    .then((response) => response.json())
+    .then((json) => {
+        const love_quote = document.querySelector(".love-quote");
+        love_quote.innerHTML = json[0]["love_quotes"][value][q_id];
+        love_quote.style.display = "block";
+    });
 
     if (yourName.value.toLowerCase() === loversName.value.toLowerCase()) {
         love_stmnt.innerHTML = `You love yourself this much?😂`

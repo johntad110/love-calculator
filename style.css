@@ -139,6 +139,15 @@ label {
     max-width: 250px;
 }
 
+.love-quote {
+    display: none;
+    max-width: 250px;
+    font-size: 100%;
+    font-family: "Bruno Ace SC", cursive;
+    font-weight: bold;
+    color: rgb(220, 215, 215);
+}
+
 .love-score {
     width: 300px;
     height: 300px;
@@ -244,3 +253,4 @@ footer p {
     font-size: 1em;
     font-family: 'Comfortaa', cursive;
 }
+ 
